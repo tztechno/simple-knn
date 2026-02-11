@@ -194,7 +194,7 @@ __global__ void boxMeanDist(uint32_t P,
     int idx = blockIdx.x * blockDim.x + threadIdx.x;
     if (idx >= P) return;
 
-    float inf = std::numeric_limits<float>::max();
+    float inf = CUDART_INF_F;
 
     float3 point = points[indices[idx]];
     float best[3] = { inf, inf, inf };
