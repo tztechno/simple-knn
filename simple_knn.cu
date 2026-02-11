@@ -95,7 +95,7 @@ __global__ void boxMinMax(uint32_t P,
 {
     int idx = blockIdx.x * blockDim.x + threadIdx.x;
 
-    float inf = std::numeric_limits<float>::max();
+    float inf = CUDART_INF_F; 
 
     MinMax me;
 
