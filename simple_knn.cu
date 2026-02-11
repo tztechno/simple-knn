@@ -6,6 +6,10 @@
 #define BOX_SIZE 1024
 
 #include <cfloat>
+#ifndef FLT_MAX
+#define FLT_MAX 3.402823466e+38F
+#endif
+
 #include <float.h>
 #include "cuda_runtime.h"
 #include "device_launch_parameters.h"
