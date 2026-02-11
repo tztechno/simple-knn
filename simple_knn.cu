@@ -5,6 +5,7 @@
 
 #define BOX_SIZE 1024
 
+#include <cfloat>
 #include <float.h>
 #include "cuda_runtime.h"
 #include "device_launch_parameters.h"
