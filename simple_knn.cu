@@ -5,6 +5,7 @@
 
 #define BOX_SIZE 1024
 
+#include <math_constants.h>
 #include <cfloat>
 #ifndef FLT_MAX
 #define FLT_MAX 3.402823466e+38F
